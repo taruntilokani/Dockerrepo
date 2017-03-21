@@ -1,0 +1,5 @@
+cd /
+cd /home/devops/Dockerrepo
+docker stop dockercon
+docker rm dockercon
+docker run -it --name dockercon -p 8080:80 -v /home/devops/Dockerrepo/src:/var/www/html fedora/apache
